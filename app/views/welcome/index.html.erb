@@ -1,0 +1,9 @@
+<h1>Welcome#index</h1>
+<% if user_signed_in? %>
+  <p>We should probably do stuff.</p>
+<% else %>
+  <p>
+    Come build ToDoLists with us, <%= link_to 'Sign up Now!', new_user_registration_path %>
+  </p>
+<% end %>
+<p>Find me in app/views/welcome/index.html.erb</p>
