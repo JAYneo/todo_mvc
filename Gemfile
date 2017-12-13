@@ -16,6 +16,8 @@ gem 'omniauth'
 gem 'jquery-rails'
 # Use Bootstrap Sass as our front-end framework
 gem 'bootstrap-sass', '~> 3.3.7'
+#use tinyMCE Editor for our site
+gem 'tinymce-rails'
 
 # Use sqlite3 as the database for Active Record
 

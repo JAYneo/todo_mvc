@@ -4,4 +4,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable, :timeoutable, :omniauthable
 
   has_many :lists, dependent: :destroy
+  has_many :articles, dependent: :destroy
 end

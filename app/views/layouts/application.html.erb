@@ -12,8 +12,10 @@
 
     <nav class="nav navbar navbar-default navbar-fixed-top">
       <div class="container">
+        <div class="navbar-header">
+          <%= link_to image_tag('viper.jpg', height: '45'), root_path %>
+        </div>
         <ul class="nav navbar-nav">
-          <%= render 'nav_link', text: 'Home', path: root_path %>
           <%= render 'nav_link', text: 'New List', path: new_list_path %>
           <%= render 'nav_link', text: 'My Lists', path: lists_path %>
         </ul>
@@ -30,11 +32,11 @@
       </div>
     </nav>
 
+<div class="conainter">
     <p id="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
-
     <%= yield %>
+</div>
 
   </body>
 </html>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :articles
   resources :lists do
     resources :items do
       member do
