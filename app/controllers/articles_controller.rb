@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :require_login, except: [:show, :index]
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_article, only: [:edit, :update, :destroy]
 
   # GET /articles
   # GET /articles.json
@@ -71,7 +71,7 @@ class ArticlesController < ApplicationController
   def set_article
     @article = current_user.articles.find(params[:id])
   end
-  
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
       params.require(:article).permit(:title, :content, :user_id)

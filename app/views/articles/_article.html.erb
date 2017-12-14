@@ -1,10 +1,16 @@
+
+
 <div class="row">
   <div class="col-md-12">
     <div class="page-header">
       <h2 class="article-title">
-        <%= article.title %>
+        <% if current_page?(articles_path) %>
+          <%= link_to article.title, article %>
+          <% else %>
+          <%= article.title %>
+          <% end %>
         <small>
-          by <%= article.user.email %>
+          by <%= article.user.firstname %> <%= article.user.lastname[0] %>
         </small>
         <small class="pull-right">
           <%= time_ago_in_words(article.created_at) %>
