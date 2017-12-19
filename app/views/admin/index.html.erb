@@ -1,3 +1,14 @@
+<div class="stats container">
+  <div class="row">
+    <div class="col-md-12">
+      Users <span class="badge"><%= @users.count %></span>
+      Articles <span class="badge"><%= @article_count %></span>
+      Lists <span class="badge"><%= @list_count %></span>
+      Items <span class="badge"><%= @item_count %></span>
+    </div>
+  </div>
+</div>
+
 <h1>All Users</h1>
 <ul>
   <% @users.each do |user| %>

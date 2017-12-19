@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.4'
 gem 'devise'
 gem 'omniauth'
 
+gem 'faker'
+
 # Use JQuery since Bootstrap requires it
 gem 'jquery-rails'
 # Use Bootstrap Sass as our front-end framework
